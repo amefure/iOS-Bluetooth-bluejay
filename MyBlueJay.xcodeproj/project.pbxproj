@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1242A2BD2B06FC360033BD09 /* BluejayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242A2BC2B06FC360033BD09 /* BluejayManager.swift */; };
 		127863232B0653B500AB1963 /* MyBlueJayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127863222B0653B500AB1963 /* MyBlueJayApp.swift */; };
 		127863252B0653B500AB1963 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127863242B0653B500AB1963 /* ContentView.swift */; };
 		127863272B0653B600AB1963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127863262B0653B600AB1963 /* Assets.xcassets */; };
 		1278632A2B0653B600AB1963 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127863292B0653B600AB1963 /* Preview Assets.xcassets */; };
+		55B4DD80174D3EF1650D14A1 /* Pods_MyBlueJay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A16F723686F33701B8CC04 /* Pods_MyBlueJay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1242A2BB2B065C300033BD09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1242A2BC2B06FC360033BD09 /* BluejayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluejayManager.swift; sourceTree = "<group>"; };
 		1278631F2B0653B500AB1963 /* MyBlueJay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBlueJay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127863222B0653B500AB1963 /* MyBlueJayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBlueJayApp.swift; sourceTree = "<group>"; };
 		127863242B0653B500AB1963 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		127863262B0653B600AB1963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		127863292B0653B600AB1963 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7160CBF995FD8B68EE49E0DA /* Pods-MyBlueJay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBlueJay.release.xcconfig"; path = "Target Support Files/Pods-MyBlueJay/Pods-MyBlueJay.release.xcconfig"; sourceTree = "<group>"; };
+		90A16F723686F33701B8CC04 /* Pods_MyBlueJay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBlueJay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3EBECD1473CF291D055698 /* Pods-MyBlueJay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBlueJay.debug.xcconfig"; path = "Target Support Files/Pods-MyBlueJay/Pods-MyBlueJay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B4DD80174D3EF1650D14A1 /* Pods_MyBlueJay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +45,8 @@
 			children = (
 				127863212B0653B500AB1963 /* MyBlueJay */,
 				127863202B0653B500AB1963 /* Products */,
+				A0643E74612FC6AD6769F61D /* Pods */,
+				99D01EC6EF7BF8DB0FE802DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +61,10 @@
 		127863212B0653B500AB1963 /* MyBlueJay */ = {
 			isa = PBXGroup;
 			children = (
+				1242A2BB2B065C300033BD09 /* Info.plist */,
 				127863222B0653B500AB1963 /* MyBlueJayApp.swift */,
 				127863242B0653B500AB1963 /* ContentView.swift */,
+				1242A2BC2B06FC360033BD09 /* BluejayManager.swift */,
 				127863262B0653B600AB1963 /* Assets.xcassets */,
 				127863282B0653B600AB1963 /* Preview Content */,
 			);
@@ -67,6 +79,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		99D01EC6EF7BF8DB0FE802DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90A16F723686F33701B8CC04 /* Pods_MyBlueJay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0643E74612FC6AD6769F61D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB3EBECD1473CF291D055698 /* Pods-MyBlueJay.debug.xcconfig */,
+				7160CBF995FD8B68EE49E0DA /* Pods-MyBlueJay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1278632D2B0653B600AB1963 /* Build configuration list for PBXNativeTarget "MyBlueJay" */;
 			buildPhases = (
+				A4147F044475AE405A07C815 /* [CP] Check Pods Manifest.lock */,
 				1278631B2B0653B500AB1963 /* Sources */,
 				1278631C2B0653B500AB1963 /* Frameworks */,
 				1278631D2B0653B500AB1963 /* Resources */,
+				80B66037D35A07A7F4188BFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80B66037D35A07A7F4188BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBlueJay/Pods-MyBlueJay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBlueJay/Pods-MyBlueJay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBlueJay/Pods-MyBlueJay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4147F044475AE405A07C815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBlueJay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1278631B2B0653B500AB1963 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +212,7 @@
 			files = (
 				127863252B0653B500AB1963 /* ContentView.swift in Sources */,
 				127863232B0653B500AB1963 /* MyBlueJayApp.swift in Sources */,
+				1242A2BD2B06FC360033BD09 /* BluejayManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +340,7 @@
 		};
 		1278632E2B0653B600AB1963 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3EBECD1473CF291D055698 /* Pods-MyBlueJay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,7 +349,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyBlueJay/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBlueJay/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "アプリ内でBluetooth機能を使用するため";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "アプリ内でBluetooth機能を使用するため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +374,7 @@
 		};
 		1278632F2B0653B600AB1963 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7160CBF995FD8B68EE49E0DA /* Pods-MyBlueJay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,7 +383,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyBlueJay/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBlueJay/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "アプリ内でBluetooth機能を使用するため";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "アプリ内でBluetooth機能を使用するため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
